@@ -1,0 +1,79 @@
+@import url("./common.css");
+
+/* Contact Us Styling */
+#contact .contact-info
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+}
+
+@media screen and (max-width: 976px)
+{
+    #contact .contact-info
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#contact .contact-info .box
+{
+    text-align: center;
+    background-color: var(--background-secondary);
+    padding: 2rem;
+}
+
+#contact .contact-info .box i
+{
+    padding-bottom: 1rem;
+}
+
+/* Form Styling */
+.form-n-map
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--background-secondary);
+}
+
+@media screen and (max-width: 976px)
+{
+    .form-n-map
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #map
+    {
+        height: 40vh;
+    }
+}
+
+.contact-form
+{
+    padding: 1.5rem;
+}
+
+.contact-form form .form-group label
+{
+    display: block;
+}
+
+.contact-form form .form-group, 
+.contact-form form .btn-dark
+{
+    margin: 0.75rem;
+}
+
+.contact-form form .form-group input,
+.contact-form form .form-group textarea
+{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.contact-form form input
+{
+    border: 0;
+}

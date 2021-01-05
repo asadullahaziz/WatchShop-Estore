@@ -1,0 +1,369 @@
+:root
+{
+    --primary: rgb(115, 76, 173);
+    --primary-a: rgba(104, 67, 160, 0.85);
+    --secondary: rgb(83, 48, 134);
+    --secondary-a: rgba(64, 37, 105, 0.85);
+    --background-primary: rgb(35, 39, 42);
+    --background-primary-a: rgba(35, 39, 42, 0.85);
+    --background-secondary: rgb(54, 57, 63);
+    --background-secondary-a: rgba(54, 57, 63, 0.85);
+}
+
+/* CSS Reset */
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Universal Styling */
+body
+{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4rem;
+    background-color: var(--background-primary);
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+ul li
+{
+    list-style: none;
+}
+
+ul
+{
+    margin: 0;
+}
+
+ul li a,
+ul li a:hover
+{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.color-primary
+{
+    color: var(--primary);
+}
+
+.content
+{
+    margin: 5rem 0;
+}
+
+.bttn
+{
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    font-weight: normal;
+    box-shadow: 0;
+    border: 0;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease-in;
+}
+
+.bttn:hover
+{
+    background: var(--secondary);
+    text-decoration: none;
+    color: #eee;
+    box-shadow: 1px 1px 10px #111;
+    transform: translate(-1px,-2px);
+}
+
+.responsive
+{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styling */
+    .container .top-panel-flex
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container .top-panel-flex .login-media
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .login-media button
+    {
+        margin-right: 1rem;
+    }
+
+    /* Top Panel Styling */
+    #top-panel
+    {
+        background-color: var(--primary);
+        color: #eee;
+        padding: 10px 0px;
+    }
+
+    /* Logo Styling */
+    .logo
+    {
+        color: inherit;
+        color: inherit;
+    }
+
+    .logo h1
+    {
+        color: inherit;
+        display: inline-block;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    .logo:hover
+    {
+        color: #fff;
+    }
+
+    .login-media > a
+    {
+        margin-right: 2rem;
+    }
+
+    /* Media Links */
+    .media
+    {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .media li
+    {
+        margin: 0px 10px;
+    }
+
+/* Navigation Bar Styling */
+#nav-bar
+{
+    background-color: var(--background-secondary-a);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#nav-bar ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+#nav-bar ul li
+{
+    color: #fff;
+}
+
+#nav-bar ul li a
+{
+    color: inherit;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+#nav-bar ul li a:hover
+{
+    background-color: var(--primary);
+    color: #eee;
+}
+
+/* Hamburger */
+#toggler,
+.hamburger
+{
+    display: none;
+}
+
+/* Featured Products */
+.product
+{
+    display: inline-block;
+    background: var(--background-secondary);
+    padding: 1.5rem;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 3px 3px 6px #111;
+    transition: all 0.6s;
+}
+
+.product:hover
+{
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px #111;
+    transform: scale(1.1, 1.1);
+}
+
+.product img
+{
+    display: block;
+    margin: auto;
+}
+
+.product-grid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+}
+
+#featured .featured-heading
+{
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 976px)
+{
+    .product-grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .product-grid
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Footer Styling */
+footer
+{
+    padding: 1rem;
+    background: var(--background-secondary);
+}
+
+footer .social
+{
+    text-align: right;
+}
+
+footer .social a
+{
+    display: inline-block;
+    color: var(--primary);
+    margin:0 4px;
+    font-size: 1.5rem;
+}
+
+/* Responsive Nav Bar */
+@media screen and (max-width: 768px)
+{
+    #top-panel .media
+    {
+        display: none;
+    }
+    
+    #top-panel
+    {
+        position: relative;
+        z-index: 101;
+    }
+    
+    /* HamBurger Menu */
+    
+    .hamburger
+    {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        background: var(--primary-color);
+        opacity: 0.7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s ease;
+    }
+    
+    .hamburger:hover
+    {
+        /* background: var(--secondary); */
+        opacity: 0.85;
+    }
+    
+    /* Hamburger Lines */
+    .hamburger > div
+    {
+        position: relative;
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        transition: all 0.4s ease;
+    }
+    
+    .hamburger div::before,
+    .hamburger div::after
+    {
+        position: absolute;
+        content: '';
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        transform: translateY(-10px);
+    }
+    
+    .hamburger div::after
+    {
+        transform: translateY(10px);
+    }
+    
+    /* Toggle Animation */
+    .toggle > div
+    {
+        transform: rotate(135deg);
+    }
+    
+    .toggle  > div::before,
+    .toggle > div::after
+    {
+        transform: rotate(90deg);
+    }
+    
+    /* Rotate Animation On Hover */
+    .toggle:hover > div
+    {
+        transform: rotate(225deg);
+    }
+    
+    /* nav-bar */
+    #nav-bar
+    {
+        background-color: var(--background-secondary);
+        position: absolute;
+        width: 100vw;
+        top: -12rem;
+        left: 0;
+        transition: all 0.6s ease-in-out;
+        z-index: 100;
+    }
+    
+    #nav-bar ul
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+}

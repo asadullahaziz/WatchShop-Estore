@@ -1,0 +1,55 @@
+@import url("./common.css");
+
+/* About */
+#about .content
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .suit-img
+{
+    background: url('../images/suit1.jpg') no-repeat center center/cover;
+    opacity: 0.95;
+    height: 300px;
+    box-shadow: 2px 2px 8px #111;
+    border-radius: 4px;
+}
+
+#about .content div
+{
+    width: 40%;
+}
+
+#about .content div p
+{
+    margin: 2rem 0;
+}
+
+/* Mobile Screen Media Queries */
+@media screen and (max-width: 768px)
+{
+    #about .content
+    {
+        flex-direction: column;
+    }
+    
+    #about .suit-img
+    {
+        height: 300px;
+        box-shadow: 2px 2px 8px #111;
+        border-radius: 4px;
+        width: 100%;
+    }
+    
+    #about .content div
+    {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    #about .content div p
+    {
+        margin: 2rem 0;
+    }
+}

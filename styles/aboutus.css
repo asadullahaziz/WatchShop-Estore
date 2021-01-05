@@ -1,0 +1,81 @@
+@import url("./common.css");
+
+/* About Us Styling */
+.aboutus-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+
+.about-img1
+{
+    background: url('../images/watch-laptop.jpg')no-repeat center center/cover;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px #111;
+}
+
+.about-img2
+{
+    background: url('../images/janfillem-iwpbZ_173WM-unsplash.jpg')no-repeat center center/cover;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px #111;
+}
+
+.aboutus-grid h1
+{
+    margin-bottom: 2rem;
+}
+
+/* Reviews Styling */
+#reviews .content > div
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+#reviews .content h1
+{
+    margin-bottom: 2rem;
+}
+
+#reviews .review-card
+{
+    background-color: var(--background-secondary);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px #111;
+}
+
+#reviews .review-card .review-user
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: rgb(65, 88, 219);
+}
+
+@media screen and (max-width: 976px)
+{
+    .aboutus-grid
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-img1
+    {
+        height: 40vh;
+    }
+    
+    .about-img2
+    {
+        height: 40vh;
+    }
+
+    #reviews .content > div
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

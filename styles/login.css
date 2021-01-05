@@ -1,0 +1,54 @@
+@import url("./common.css");
+
+/* Form Styling */
+.f-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login
+{
+    color: black;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 4px 4px 16px #000;
+}
+
+@media screen and (max-width: 976px)
+{
+    .login .pic
+    {
+        display: none;
+    }
+
+    .login
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.form-wrap .l-heading
+{
+    font-weight: bolder;
+}
+
+.form-wrap form .form-group input
+{
+    border: 0;
+}
+.form-wrap form .form-group input:focus
+{
+    outline: none;
+}
+
+.form-wrap form .form-group
+{
+    border-bottom: 2px solid #000;
+    margin: 2rem 0;
+}

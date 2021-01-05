@@ -1,0 +1,13 @@
+@import url("./common.css");
+
+.admin-panel
+{
+    padding: 2rem;
+}
+
+.p-img
+{
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+}

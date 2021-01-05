@@ -1,0 +1,66 @@
+@import url("./common.css");
+
+/* Form Styling */
+
+#add-product
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrap
+{
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 4px 4px 10px #111;
+    width: 900px;
+}
+
+form
+{
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-areas: 
+    'name price'
+    'code discount'
+    'sizes quantity'
+    'img img'
+    'description description'
+    ;
+}
+
+#p-name { grid-area: name; }
+#p-price { grid-area: price; }
+#p-code { grid-area: code; }
+#p-discount { grid-area: discount; }
+#p-sizes { grid-area: sizes; }
+#p-img { grid-area: img; }
+#p-description { grid-area: description; }
+#p-quantity { grid-area: quantity; }
+
+form .form-group label
+{
+    display: block;
+}
+
+form .form-group, 
+form .bttn
+{
+    margin: 0.75rem;
+}
+
+.form-group input,
+.form-group textarea
+{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+form input
+{
+    border: 0;
+}
