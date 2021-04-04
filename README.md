@@ -25,7 +25,3 @@ WatchShop is a fully responsive full stack web application. It provides all the 
 ## WatchShop Modes
 - **User Mode:** User can view all products and its details. and learn about your store
 - **Admin Mode:** Admin can login and create basic CRUD operations.
-
-## Contributors
-- **Asad Ullah Aziz** 70067156@student.uol.edu.pk
-- **M Waleed** 70066874@student.uol.edu.pk
