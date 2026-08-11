@@ -1,9 +1,11 @@
+
+
 # WatchShop - Estore
 WatchShop is an Online Store  created as a Semester Project to explore and understand the use of databases, MYSQL databases in particular.
 
 Basically WatchShop is a simple website to showcase all your products and promote your business.
 
-WatchShop is a fully responsive full stack web application. It provides all the **basic functunalities** listed as below.
+WatchShop is a fully responsive full stack web application. It provides all the **basic functionalities** listed as below.
 
 - Browsing all available products.
 - viewing details of specific product
